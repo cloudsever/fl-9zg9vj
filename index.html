@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jordan Hawkins: Rising Star of the Pelicans</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="93a7743c-222d-4709-9ff1-1633ac8203ce" class="page sans"><header><h1 class="page-title">Jordan Hawkins: Rising Star of the Pelicans</h1><p class="page-description"></p></header><div class="page-body"><p id="1c39bb38-faf0-4b43-90f0-77ffe02512a8" class="">Jordan Hawkins is quickly becoming a household name in the world of basketball. As a rookie for the New Orleans Pelicans, he has shown flashes of brilliance that have fans and analysts buzzing. In this article, we will explore Hawkins&#x27; journey, his impact on the Pelicans, and what the future may hold for this rising star.</p><h2 id="84e11d83-c9ca-4943-835e-8fd879fd5f22" class="">How Did Jordan Hawkins Begin His Basketball Journey?</h2><p id="eb3425c2-0153-4eff-879d-3aef7c38a7cb" class="">Jordan Hawkins was born on March 29, 2002, in Gaithersburg, Maryland. From a young age, he displayed an extraordinary talent for basketball. Growing up in a sports-oriented family, he was encouraged to pursue his passion. Hawkins attended <strong>DeMatha Catholic High School</strong>, a powerhouse known for producing NBA talent.</p><p id="6c0702fc-5e2d-452f-a614-c0b9ab5ba10c" class="">At DeMatha, he honed his skills and developed a reputation as a sharpshooter. His high school career culminated in leading his team to a <strong>Washington Catholic Athletic Conference championship</strong>. By the time he graduated, he was regarded as one of the top shooting guards in the nation.</p><p id="a244cfae-674d-483e-b016-f2d91fec66bc" class="">Hawkins&#x27; journey took him to the University of Connecticut, where he continued to develop his game and showcase his talents on a larger stage.</p><h2 id="e7dd3262-bc1e-4d16-aebb-c87a7bcd0e9c" class="">What Impact Did Hawkins Have During His College Career?</h2><p id="2a97c7df-e253-4250-b1fe-82e3686bff12" class="">Hawkins played two seasons at UConn and made significant contributions to the team&#x27;s success. In his sophomore year, he averaged <strong>16.2 points</strong>, <strong>4.0 rebounds</strong>, and <strong>2.0 assists</strong> per game while shooting an impressive <strong>38% from three-point range</strong>. His ability to stretch the floor and create space for teammates was crucial for UConn&#x27;s offensive scheme.</p><p id="ead087b0-3632-4d96-94aa-d23e1a06bc64" class="">One of the highlights of Hawkins&#x27; college career was helping lead UConn to victory in the <strong>2023 NCAA Tournament</strong>, where they claimed the national championship. His clutch shooting and poise under pressure made him a standout player during this run.</p><h3 id="89bab21e-9af7-42d1-a09a-2e4474287407" class="">Key Stats from College Career</h3><table id="0566f82e-72d5-4c77-8811-7210f6ef29ac" class="simple-table"><tbody><tr id="96d11bf0-04be-460d-bf4f-9d776198e784"><td id="HpPd" class="">Season</td><td id="z`k\" class="">Points Per Game</td><td id="RSnr" class="">Rebounds Per Game</td><td id="r~Tf" class="">Assists Per Game</td><td id="Ancg" class="">Three-Point Percentage</td></tr><tr id="3f1f080d-bb05-4565-b2d5-8e4a6fdfc3aa"><td id="HpPd" class="">Freshman</td><td id="z`k\" class="">10.0</td><td id="RSnr" class="">3.0</td><td id="r~Tf" class="">1.5</td><td id="Ancg" class="">34%</td></tr><tr id="3625eb90-5226-43b4-ab70-2dfd812e3ecb"><td id="HpPd" class="">Sophomore</td><td id="z`k\" class="">16.2</td><td id="RSnr" class="">4.0</td><td id="r~Tf" class="">2.0</td><td id="Ancg" class="">38%</td></tr></tbody></table><h2 id="e2235593-2411-47e7-8641-a74e04d35bf4" class="">Why Was Hawkins Selected 14th Overall in the 2023 NBA Draft?</h2><p id="24949c0e-26e1-40d5-9d89-15807cc9afa1" class="">After an impressive college career, Hawkins declared for the NBA Draft and was selected <strong>14th overall</strong> by the New Orleans Pelicans in 2023. This selection was seen as a strategic move by the Pelicans to bolster their roster with young talent who could contribute immediately.</p><p id="b34da34a-5785-4021-83de-b2fa1d4de240" class="">Hawkins&#x27; combination of size (6&#x27;5&quot;) and shooting ability made him an attractive prospect for teams looking to enhance their perimeter game. The Pelicans were particularly interested in his potential to complement their existing stars like Zion Williamson and Brandon Ingram.</p><h3 id="21330187-0713-418a-ab1c-5ba6a4ea1e09" class="">Draft Day Quotes</h3><p id="da14968d-1fb6-4dd9-8a24-e3bd67e52b5e" class="">On draft night, Pelicans General Manager Trajan Langdon stated:</p><blockquote id="c0212b5a-d682-463d-a308-6b70d74669f6" class="">&quot;Jordan is a player who can change the dynamics of our offense with his shooting ability and basketball IQ.&quot;</blockquote><p id="28cf9b88-2c6a-4ce5-815c-fd16e2ca7d8b" class="">This sentiment reflects the excitement surrounding Hawkins as he joined the team.</p><h2 id="a225c7bc-1ab1-402e-8527-e0720b20a537" class="">What Role Does Hawkins Play on the Pelicans&#x27; Roster?</h2><p id="cd0e2668-8910-481e-a03a-8ab702115751" class="">As a rookie, Hawkins has been slotted into a role that allows him to showcase his skills while learning from veteran players. He primarily plays as a shooting guard but has also seen time at small forward due to his versatility.</p><p id="475a0081-ae5d-4866-bb30-2a9122e0133c" class="">His role involves spacing the floor and providing scoring off the bench or alongside starters when needed. The coaching staff has emphasized developing his defensive skills, which will be crucial for him to earn more minutes as he adjusts to the NBA&#x27;s pace and physicality.</p><h2 id="96cc4ae2-8d3b-4323-a8ed-76ae64d8616c" class="">How Has Hawkins Performed in His Rookie Season?</h2><p id="a254dec6-4132-40ee-90f8-15fc6cddfc07" class="">Hawkins&#x27; rookie season has been a rollercoaster ride filled with ups and downs typical for first-year players. As of mid-October 2024, he is averaging <strong>12 points</strong>, <strong>3 rebounds</strong>, and <strong>1 assist</strong> per game while maintaining a shooting percentage of <strong>36% from beyond the arc</strong>.</p><p id="defe3079-9797-43ce-862d-7c5c7e59d432" class="">While these numbers may not jump off the page, they reflect steady improvement over time. He has had several standout performances that highlight his potential:</p><ul id="0dc98fcc-0c6e-4dae-8481-35120eb2a56e" class="bulleted-list"><li style="list-style-type:disc">Scoring <strong>25 points</strong> against the Denver Nuggets.</li></ul><ul id="9772c0c0-6de4-44b3-a0a3-0f27ad46c4a7" class="bulleted-list"><li style="list-style-type:disc">Hitting a game-winning three-pointer against the Dallas Mavericks.</li></ul><ul id="713c9ee4-92b2-459f-a42e-98a50dafcce0" class="bulleted-list"><li style="list-style-type:disc">Contributing crucial minutes during tight games against playoff contenders.</li></ul><h2 id="2a1087f5-8512-4353-845c-99a71e6ff255" class="">In What Ways Does Hawkins Contribute to the Team&#x27;s Offense?</h2><p id="3b46ea97-4d6a-43ff-baff-78abe5d4588e" class="">Hawkins’ offensive contributions are primarily driven by his exceptional shooting ability. His quick release and ability to shoot off screens make him a constant threat on the perimeter. Here are some ways he impacts the Pelicans&#x27; offense:</p><ul id="5aff92d3-8e7f-4528-ba7a-6773411e8e49" class="bulleted-list"><li style="list-style-type:disc"><strong>Floor Spacing:</strong> His presence on the court forces defenders to stretch out, creating driving lanes for players like Williamson and Ingram.</li></ul><ul id="31412a10-2274-4d57-9e54-ba7392693897" class="bulleted-list"><li style="list-style-type:disc"><strong>Catch-and-Shoot Opportunities:</strong> Hawkins excels at finding open looks off ball movement, making him an ideal fit for an offense that prioritizes spacing.</li></ul><ul id="4aa6441f-433b-48d6-abf3-056ed6b2def7" class="bulleted-list"><li style="list-style-type:disc"><strong>Transition Play:</strong> His speed allows him to get out on fast breaks, where he can either finish at the rim or spot up for quick threes.</li></ul><h2 id="f437eb94-bfa2-4967-960f-d4a3a7e20c24" class="">How Does Hawkins&#x27; Shooting Ability Set Him Apart?</h2><p id="173257b9-0c4e-4d8d-92ff-c4ac4d528487" class="">One of Hawkins’ most notable traits is his shooting prowess. He possesses an effortless shooting stroke that translates well from college to professional play. Here are some key aspects of his shooting game:</p><ul id="ba472182-953a-40a3-8098-1d7b07414254" class="bulleted-list"><li style="list-style-type:disc"><strong>Quick Release:</strong> Hawkins can get his shot off quickly, making it difficult for defenders to contest.</li></ul><ul id="d914e332-675f-41dc-85f3-107afbad1065" class="bulleted-list"><li style="list-style-type:disc"><strong>Deep Range:</strong> He is comfortable shooting from beyond the arc, which stretches defenses further.</li></ul><ul id="48454259-a5f4-42cf-9379-d0236344bf5c" class="bulleted-list"><li style="list-style-type:disc"><strong>Off-Ball Movement:</strong> His ability to move without the ball allows him to find open shots consistently.</li></ul><h3 id="7a38255b-29cc-4da8-ac66-ced9d7b299c1" class="">Shooting Stats Comparison</h3><table id="78fb02ef-db67-41d7-bc85-c8f6b2e43945" class="simple-table"><tbody><tr id="529ffaaa-c45e-4736-b3ad-180d8e48502e"><td id="BpxG" class="">Metric</td><td id="\UiZ" class="">Jordan Hawkins (Rookie)</td><td id="GgBH" class="">League Average</td></tr><tr id="840ea3f8-6758-4b0b-b6c0-c56eabcfc377"><td id="BpxG" class="">Three-Point Percentage</td><td id="\UiZ" class="">36%</td><td id="GgBH" class="">35%</td></tr><tr id="a929841d-a0f8-41d3-b3e5-69fec6f7228e"><td id="BpxG" class="">Free Throw Percentage</td><td id="\UiZ" class="">78%</td><td id="GgBH" class="">75%</td></tr><tr id="9136d8d8-9f29-4ed6-89d0-a60b0d531626"><td id="BpxG" class="">Effective Field Goal %</td><td id="\UiZ" class="">48%</td><td id="GgBH" class="">50%</td></tr></tbody></table><h2 id="4e1ea6b1-bdd3-4cd1-8edc-fb23894063d9" class="">What Challenges Has Hawkins Faced in Transitioning to the NBA?</h2><p id="2350ae38-7556-4a5c-a319-fa088f382956" class="">Transitioning from college basketball to the NBA is never easy, even for highly touted prospects like Hawkins. Some challenges he has faced include:</p><ul id="0a90843b-9da7-4380-8a4d-49c795b9d2a1" class="bulleted-list"><li style="list-style-type:disc"><strong>Physicality:</strong> The NBA is significantly more physical than college basketball, requiring adjustments in how he approaches contact.</li></ul><ul id="7b41b783-9dc2-4df2-8d5f-aff9355f1d2a" class="bulleted-list"><li style="list-style-type:disc"><strong>Defensive Schemes:</strong> Understanding complex defensive schemes takes time; Hawkins has had moments where he struggled defensively.</li></ul><ul id="c778f826-7c49-4ff7-ad42-8253413f9b03" class="bulleted-list"><li style="list-style-type:disc"><strong>Consistency:</strong> Like many rookies, maintaining consistency in performance can be challenging due to nerves and adapting to new environments.</li></ul><h2 id="6708b5d4-1c54-461f-822b-e8a0db0d2daf" class="">How Is Hawkins Adapting to Playing with Stars Like Zion Williamson?</h2><p id="15b7eb7e-9e4a-4e22-baf9-d4aa2ae62f15" class="">Playing alongside established stars like Zion Williamson presents both opportunities and challenges for a rookie like Hawkins. On one hand, he benefits from being surrounded by elite talent that draws defensive attention away from him; on the other hand, there’s pressure to perform at a high level.</p><p id="f958ec9e-1cbf-4e2b-b26b-a2a78ae5a649" class="">Hawkins has expressed excitement about learning from players like Williamson:</p><blockquote id="171ac6de-ab2c-4066-bb3a-9006e649bd24" class="">&quot;Zion is incredible; just watching how he approaches each game has taught me so much about preparation.&quot;</blockquote><p id="bfbb7237-3490-42ee-9e3d-642aa05b1ea0" class="">This mentorship is invaluable as it helps him grow both on and off the court.</p><h2 id="3f6558d9-9264-4010-bd59-2fc99dfae10b" class="">What Are Hawkins&#x27; Strengths and Areas for Improvement?</h2><p id="008036a0-edd5-48ab-8bc9-9e45ca2b1d7d" class="">Hawkins possesses several strengths that make him an exciting prospect:</p><h3 id="24684e95-a9d2-424a-a1eb-c1a8bbc6d3f2" class="">Strengths</h3><ul id="4d5695dc-797c-44c2-b50d-8787f0f39b18" class="bulleted-list"><li style="list-style-type:disc"><strong>Shooting Ability:</strong> As previously mentioned, his shooting is elite.</li></ul><ul id="fc58d2a8-62e7-4a9a-b084-bb0b137f9c3b" class="bulleted-list"><li style="list-style-type:disc"><strong>Work Ethic:</strong> He is known for putting in extra hours at practice.</li></ul><ul id="7c406871-6c3f-4803-b6c5-a15cea201c10" class="bulleted-list"><li style="list-style-type:disc"><strong>Basketball IQ:</strong> Understanding plays and positioning comes naturally to him.</li></ul><h3 id="fb201dc7-721d-4e59-83a7-966e67ce976d" class="">Areas for Improvement</h3><ul id="fd1112cc-0db4-4bb6-9eab-59da2ff8f155" class="bulleted-list"><li style="list-style-type:disc"><strong>Defense:</strong> Needs to refine his defensive skills.</li></ul><ul id="4b94e896-baaf-4a53-8e79-815bc37d277b" class="bulleted-list"><li style="list-style-type:disc"><strong>Ball Handling:</strong> Developing better control will allow him to create more opportunities.</li></ul><ul id="983c57bc-152c-4057-a600-39b1400ce3b0" class="bulleted-list"><li style="list-style-type:disc"><strong>Physical Conditioning:</strong> Continued strength training will help him withstand NBA-level competition.</li></ul><h2 id="2d1bb195-99c4-4c4a-b9e6-aa6fe31082eb" class="">How Have Injuries Affected Hawkins’ Playing Time and Development?</h2><p id="8c957322-8b8d-43ee-88ce-0993ff04b03a" class="">Injuries are an unfortunate part of any athlete&#x27;s career, and Hawkins is no exception. Early in his rookie season, he faced minor injuries that limited his playing time during crucial games. These setbacks can hinder development but also offer valuable lessons in resilience.</p><p id="777b8124-009c-4ac7-838d-39bbd96f34d0" class="">The Pelicans have taken precautions with his health by managing minutes carefully during recovery periods.</p><h2 id="8d3eb1b9-180c-4f0a-b974-a39b89d89892" class="">What Do Analysts Predict for Hawkins&#x27; Future with the Pelicans?</h2><p id="9d9745dd-dfc6-4938-a9b0-4370257eeb36" class="">Analysts are optimistic about Hawkins’ future with New Orleans. Many see him as a potential starter within a few seasons if he continues developing at this rate. His skill set fits well into modern NBA playstyles that prioritize shooting and versatility.</p><h3 id="0c4c870e-1638-4871-89a3-0708ed21333d" class="">Analyst Predictions</h3><ol type="1" id="1a06488f-0941-4349-856d-2ca9e8fba44a" class="numbered-list" start="1"><li><strong>All-Star Potential:</strong> Some believe he could reach All-Star status if he maximizes his abilities.</li></ol><ol type="1" id="95a4c020-2614-46e4-bdc1-51cd03249b53" class="numbered-list" start="2"><li><strong>Key Role Player:</strong> Others see him as an essential piece of a championship-contending team.</li></ol><ol type="1" id="39881396-79c9-4501-b6fe-58b89452c122" class="numbered-list" start="3"><li><strong>Trade Asset:</strong> Should other needs arise within the roster, analysts speculate that teams may view him as a valuable trade asset due to his potential.</li></ol><h2 id="10b1fad0-51c7-451b-9405-e905a05b5512" class="">How Is Hawkins Embracing Leadership as a Young Player?</h2><p id="933ea5a9-a3f7-408e-ab5d-e372b9d928a8" class="">Despite being one of the youngest players on the team, Hawkins has embraced leadership roles within practices and locker room discussions. He understands that setting an example through work ethic can inspire not only rookies but also veterans who may struggle with consistency.</p><blockquote id="b6461e78-8dae-47e0-b1e3-252247d467fa" class="">&quot;I want my teammates to know they can count on me,&quot; says Hawkins when asked about leadership responsibilities.</blockquote><p id="07f3b590-4139-424d-a1b6-d0ae3cfd5140" class="">His willingness to take charge bodes well for both his personal development and team chemistry moving forward.</p><h2 id="39b2be58-9bf0-4e23-8a25-f2ecf58d5c29" class="">What Are Fans and Coaches Saying About Hawkins&#x27; Potential?</h2><p id="455ee727-0ddd-4ccb-9f05-756aed44b98e" class="">Fans have taken notice of Jordan Hawkins’ performances early in his career, often expressing excitement about what lies ahead through social media platforms like Twitter and Instagram:</p><blockquote id="48a078c1-2eaa-4f3d-9f6c-f06354032b1f" class="">“Hawkins is going to be special! Just wait!” - A common sentiment among fans after standout games.</blockquote><p id="3e4a494f-f59f-4c60-a13b-b19d9b4c2467" class="">Coaches have praised his work ethic during practices:</p><blockquote id="b5ba87f5-e321-4788-8792-d68219b93065" class="">“He’s always one of the first ones in and last ones out,” said Pelicans head coach Willie Green during a recent press conference.</blockquote><p id="b719db09-fb3d-48e7-93fe-a469e2f07246" class="">These endorsements from both fans and coaches highlight how much promise they see in this young player.</p><h2 id="337abedd-42b6-454b-a214-a1e7402b1a49" class="">How Does Hawkins’ Contract Reflect His Value to the Team?</h2><p id="8f80b012-5241-43cb-b06b-2ee00b8a36e9" class="">As a first-round draft pick, Jordan Hawkins signed a standard rookie contract that reflects both potential value and financial prudence from management’s perspective:</p><h3 id="1df77549-16ce-48b3-9ec0-009b1f324559" class="">Contract Details</h3><ul id="aaa9f418-b1b7-4252-bc34-9c875d53e623" class="bulleted-list"><li style="list-style-type:disc"><strong>Length:</strong> Four years</li></ul><ul id="af552f69-c556-419e-8cd6-e05633808cf9" class="bulleted-list"><li style="list-style-type:disc"><strong>Total Value:</strong> Approximately $15 million</li></ul><ul id="a2eeedad-df57-4dd2-bc26-8160ea1a5433" class="bulleted-list"><li style="list-style-type:disc"><strong>Team Options:</strong> Includes options for years three and four</li></ul><p id="d2c50521-e620-40e5-821d-b0f0cf7a7f9d" class="">This contract structure allows both parties flexibility while ensuring that if Hawkins continues developing into an impactful player, he will be compensated accordingly.</p><h2 id="e3a77ea3-5421-4c0f-813f-ea0d89a7944b" class="">What Are the Key Takeaways from Hawkins&#x27; Early Career?</h2><p id="4c2d36bc-838c-40af-95dd-a3a7b5710aa0" class="">Jordan Hawkins is undoubtedly one of basketball&#x27;s rising stars with immense potential ahead of him:</p><ol type="1" id="8b4dce61-c613-4107-a803-48a08b3c78fd" class="numbered-list" start="1"><li><strong>Strong Foundation:</strong> His college success laid down solid groundwork for professional play.</li></ol><ol type="1" id="9ab16bd1-a3a0-48bc-9ff1-db3f4019f6b9" class="numbered-list" start="2"><li><strong>Adaptability:</strong> He shows promise adapting quickly despite challenges faced during transition phases.</li></ol><ol type="1" id="8b78db0a-df2f-431f-a938-ae89aafcbda3" class="numbered-list" start="3"><li><strong>Future Outlook:</strong> Analysts predict bright prospects if current growth trajectories continue positively.</li></ol><p id="13debb2c-ac7e-43bf-8f8b-004270280581" class="">In conclusion, Jordan Hawkins represents hope not only for himself but also for New Orleans Pelicans fans who eagerly anticipate what this talented young player will bring in seasons to come. With hard work, determination, and guidance from seasoned teammates, I believe we’re just scratching the surface of what Jordan can achieve in this league!</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
